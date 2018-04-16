@@ -40,7 +40,16 @@ def miniMaxSum(arr):
     #
     # Write your code here.
     #
-    print(arr)
+    sum =0
+    L=[]
+    for element in arr:
+    	sum = sum + element
+    for x in arr:
+    	result = sum - x
+    	L.append(result)
+    print(min(L), max(L))
+
+
 if __name__ == '__main__':
     arr = list(map(int, input().rstrip().split()))
 
