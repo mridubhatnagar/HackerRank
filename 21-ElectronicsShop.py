@@ -53,7 +53,7 @@ def getMoneySpent(keyboards, drives, b):
                 keyboards_drives.append(sum)
     print(keyboards_drives)
 
-    #If price is greater than budget print -1 else 1
+    #If price is greater than budget return -1 else return max
     if len(keyboards_drives) !=0:
         print(max(keyboards_drives))
         output = max(keyboards_drives)
