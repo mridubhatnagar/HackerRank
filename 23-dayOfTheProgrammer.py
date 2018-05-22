@@ -74,6 +74,7 @@ def solve(year):
             break
 
     print(date_string)
+    return date_string
 
 
 
