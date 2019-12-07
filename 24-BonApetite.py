@@ -36,11 +36,11 @@ def solve(n, s, d):
     else:
     	print("Bon Appetit")
     	amount = "Bon Appetit"
-    return over_charge
+    return amount
 
 
 if __name__ == '__main__':
-    #fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     n = list(map(int, input().rstrip().split()))
 
@@ -51,6 +51,6 @@ if __name__ == '__main__':
     result = solve(n, s, b)
     print(result)
 
-    #fptr.write(str(result) + '\n')
+    fptr.write(str(result) + '\n')
 
-    #fptr.close()
+    fptr.close()

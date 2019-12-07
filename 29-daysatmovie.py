@@ -23,8 +23,6 @@ import sys
 # Complete the beautifulDays function below.
 def beautifulDays(i, j, k):
 
-	
-	L=[]
 	L1=[]
     
     # Part 0: Iterate over defined range

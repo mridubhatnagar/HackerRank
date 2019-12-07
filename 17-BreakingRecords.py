@@ -32,6 +32,8 @@ import sys
 #
 # Complete the breakingRecords function below.
 #
+
+
 def breakingRecords(score):
     #
     # Write your code here.
@@ -42,12 +44,12 @@ def breakingRecords(score):
     count_low = 0
     result = []
     for element in score:
-    	if element > highest_val:
-    		count_high = count_high + 1
-    		highest_val = element
-    	elif element < lowest_val:
-    		count_low = count_low + 1
-    		lowest_val = element
+        if element > highest_val:
+            count_high += 1
+            highest_val = element
+        elif element < lowest_val:
+            count_low += 1
+            lowest_val = element
     result.append(count_high)
     result.append(count_low)
     return result

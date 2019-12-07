@@ -56,7 +56,6 @@ def designerPdfViewer(h, word):
     		#print(int_val)
     		letter_height = h[int_val]
     		L2.append(letter_height)
-    print(L2)
     height = max(L2)
     width = len(word)
     result = height * width
