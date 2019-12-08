@@ -1,9 +1,6 @@
 """
 Problem Statement - https://www.hackerrank.com/challenges/kaprekar-numbers/problem
-
 """
-
-
 
 #!/bin/python3
 
