@@ -1,9 +1,6 @@
 """
 Problem Statement - https://www.hackerrank.com/challenges/sherlock-and-array/problem
 """
-
-
-
 #!/bin/python3
 
 import math
