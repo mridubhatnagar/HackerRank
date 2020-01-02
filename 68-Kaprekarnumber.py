@@ -13,7 +13,7 @@ import sys
 # Complete the kaprekarNumbers function below.
 def kaprekarNumbers(p, q):
     L=[]
-    for number in range(p, q):
+    for number in range(p, q+1):
         square_number=number*number
         split_string = list(str(square_number))
         # right side should be d digits long
