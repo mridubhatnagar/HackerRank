@@ -56,3 +56,42 @@ select sum(population) from city where countrycode='JPN';
 
 19. --https://www.hackerrank.com/challenges/population-density-difference/problem
 select max(population) - min(population) from city;
+
+20. --https://www.hackerrank.com/challenges/earnings-of-employees/problem
+select (months*salary) as earnings, count(*) from employee group by 1 order by 1 desc LIMIT 1;
+
+21. --https://www.hackerrank.com/challenges/weather-observation-station-2/problem
+select round(sum(LAT_N), 2), round(sum(LONG_W),2) from station;
+
+22. --https://www.hackerrank.com/challenges/weather-observation-station-13/problem
+select round(sum(LAT_N),4) from station where LAT_N>38.7880 and LAT_N<137.235;
+
+23. --https://www.hackerrank.com/challenges/weather-observation-station-14/problem
+select round(max(LAT_N),4) from station where LAT_N < 137.2345;
+
+24. --https://www.hackerrank.com/challenges/average-population/problem
+select round(avg(population)) from city;
+
+25. -- https://www.hackerrank.com/challenges/weather-observation-station-16/problem
+select round(min(LAT_N), 4) from station where LAT_N > 38.7780;
+
+26. -- https://www.hackerrank.com/challenges/asian-population/problem
+select sum(city.population) from city inner join country on city.countrycode=country.code where continent='Asia';
+
+27. --https://www.hackerrank.com/challenges/african-cities/problem
+select city.name from city inner join country on city.countrycode=country.code where continent='Africa';
+
+28. --https://www.hackerrank.com/challenges/weather-observation-station-4/problem
+select count(city)-count(distinct city) from station;
+
+29. --https://www.hackerrank.com/challenges/weather-observation-station-8/problem
+select city from station where city REGEXP '^[aeiou].*[aeiou]$';
+
+30. --https://www.hackerrank.com/challenges/weather-observation-station-11/problem
+select distinct city from station where city REGEXP '^[^aeiou]|[^aeiou]$';
+
+31. --https://www.hackerrank.com/challenges/weather-observation-station-12/problem
+select distinct city from station where city REGEXP '^[^aeiou].*[^aeiou]$';
+
+32. --https://leetcode.com/problems/combine-two-tables/
+select FirstName, LastName, City, State from Person left join Address on Person.PersonId=Address.PersonId 
